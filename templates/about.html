@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color:#f4f4f4;
+            color:#333;
+        }
+
+        nav{
+            background-color:#2c3e50;
+            padding:15px 50px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav h2{
+            color:white;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+        }
+
+        nav ul li{
+            margin-left:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        .container{
+            max-width:1000px;
+            margin:50px auto;
+            background:white;
+            padding:40px;
+            border-radius:10px;
+            box-shadow:0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:20px;
+            color:#2c3e50;
+        }
+
+        p{
+            line-height:1.8;
+            margin-bottom:15px;
+        }
+
+        .mission{
+            margin-top:30px;
+            padding:20px;
+            background:#ecf0f1;
+            border-radius:8px;
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            background:#2c3e50;
+            color:white;
+            margin-top:50px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <h2>Flask Project</h2>
+        <ul>
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>About Us</h1>
+
+        <p>
+            Welcome to our Flask application. This project was developed
+            to demonstrate web application development using Python and Flask.
+            It provides a simple and efficient platform for users to interact
+            with our services.
+        </p>
+
+        <p>
+            Flask is a lightweight web framework that enables developers to
+            create secure, scalable, and maintainable web applications.
+            Our project uses Flask to manage routing, templates, and user
+            interactions efficiently.
+        </p>
+
+        <div class="mission">
+            <h2>Our Mission</h2>
+            <p>
+                Our mission is to build reliable and user-friendly web
+                applications that solve real-world problems while providing
+                an excellent user experience.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Flask Project. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
